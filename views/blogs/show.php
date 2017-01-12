@@ -11,7 +11,7 @@
         <div class="form-group">
           <label for="name" class="col-md-3 control-label">本文</label>
           <div class="col-md-9">
-            ここに本文ここに本文ここに本文ここに本文ここに本文ここに本文ここに本文ここに本文
+            <?php echo $viewOptinons['body']; ?>
           </div>
         </div>
         <div class="form-group">

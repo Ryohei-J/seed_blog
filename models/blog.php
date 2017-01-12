@@ -52,17 +52,14 @@
 
 			function show($id){
 				// select文の記述
-				$sql = 'SELECT `title`, `body` FROM `blogs` WHERE `id` = 1';
+				$sql = sprintf('SELECT `title`, `body` FROM `blogs` WHERE `id` = %d', $id);
 
 				// SQLの実行
 				$results = mysqli_query($this->dbconnect, $sql) or die(mysqli_error($this->dbconnect));
 
 				// 実行結果を返す
-				$rtn = array();
-				while ($result = mysqli_fetch_assoc($results)) {
-					$rtn[] = $result;
-				}
-				return $results;
+				$result = mysqli_fetch_assoc($results);
+				return $result;
 			}
 		}
 
