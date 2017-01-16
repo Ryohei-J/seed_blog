@@ -1,4 +1,3 @@
-<?php //var_dump($viewOptinons); ?>
 <div class="row">
       <div class="col-md-4 content-margin-top">
       <p><a href="/seed_blog/blogs/add" class="btn btn-info">新規投稿</a></p>

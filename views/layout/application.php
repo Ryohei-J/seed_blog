@@ -1,10 +1,8 @@
 <?php
-
   $adjust_string = '';
   if (($action == 'show') || ($action == 'edit') || ($action == 'delete')) {
     $adjust_string = '../';
   }
-
 ?>
 
 <!DOCTYPE html>
